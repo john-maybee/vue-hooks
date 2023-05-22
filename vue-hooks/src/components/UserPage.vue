@@ -1,5 +1,10 @@
 <script>
+import UserCard from "./UserCard.vue";
+
 export default {
+    components: {
+        UserCard,
+    },
     data: () => ({
         userList: [],
     }),
@@ -19,9 +24,14 @@ export default {
   <main>
     <h1>Users</h1>
     <ul>
-        <li v-for="user in userList" :key="`user-${user.id}`">
-            {{ user.name }}: {{ user.website }}
-        </li>
+        <!-- <li> -->
+        <UserCard 
+            v-for="user in userList"
+            :user="user" 
+            :key="`user-${user.id}`"
+        />
+            <!-- {{ user.name }}: {{ user.website }}
+        </li> -->
     </ul>
     <!-- <pre>{{ userList }}</pre> -->
   </main>
