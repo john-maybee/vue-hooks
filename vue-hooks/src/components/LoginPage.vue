@@ -10,7 +10,7 @@
 </template>
 
 <style>
-main {
+/* main {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -38,5 +38,5 @@ button {
   color: green;
   background-color: rgb(213, 255, 213);
   cursor: pointer;
-}
+} */
 </style>
