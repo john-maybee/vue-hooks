@@ -22,6 +22,11 @@ const router = createRouter({
             component: () => import('@/views/UserPage.vue'),
 
         },
+        {
+            path: '/user/:name',
+            component: () => import('@/views/UserDetailPage.vue'),
+        },
+
     ]
 })
 app.use(router)
