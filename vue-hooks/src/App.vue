@@ -46,6 +46,8 @@
     </nav>
   </header>
 
+  <p>This is a new message!</p>
+
   <!-- <HomePage v-if="currentPage === 'Home'" />
   <LoginPage v-else /> -->
   <Suspense>

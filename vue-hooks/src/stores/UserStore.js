@@ -1,17 +1,17 @@
 import { defineStore } from "pinia";
 
 export const useUserStore = defineStore('UserStore', {
-    // State
+    // Data
     state: () => ({
         userList: [],
     }),
-    // Getter
+    // Computed
     getters: {
         shortUserList: (state) => {
             return state.userList.splice(0, 5);
         }
     },
-    // Method
+    // Methods
     actions: {
         async fetchUsers() {
             const response = await fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json());
