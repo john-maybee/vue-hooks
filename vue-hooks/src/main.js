@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { createPinia } from 'pinia'
+import HomePage from '@/views/HomePage.vue'
 
 
 import App from './App.vue'
@@ -11,7 +12,7 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            component: () => import('@/views/HomePage.vue'),
+            component: HomePage,
         },
         {
             path: '/login',
@@ -33,6 +34,6 @@ const router = createRouter({
 
 const pinia = createPinia()
 
-app.use(router)
-app.use(pinia)
-app.mount('#app')
+app.use(router);
+app.use(pinia);
+app.mount('#app');
