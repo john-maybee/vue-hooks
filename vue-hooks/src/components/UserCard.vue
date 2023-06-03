@@ -19,5 +19,11 @@ export default {
 .user-card {
     border: 2px solid rgb(66,184,131);
     padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(213, 255, 213);
+    color: green;
+    cursor: pointer;
 }
+
 </style>

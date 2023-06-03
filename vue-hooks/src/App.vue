@@ -46,7 +46,7 @@
     </nav>
   </header>
 
-  <p>This is a new message!</p>
+  <p class="content">This is a new message to test the build!</p>
 
   <!-- <HomePage v-if="currentPage === 'Home'" />
   <LoginPage v-else /> -->
@@ -97,6 +97,22 @@ span.logo img {
 .nav a:last-child {
   padding-right: 0;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 1.5rem;
+  background-color: black;
+  color: rgb(66,184,131);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
 main {
   display: flex;
   justify-content: center;
