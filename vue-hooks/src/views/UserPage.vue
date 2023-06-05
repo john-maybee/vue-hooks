@@ -21,11 +21,19 @@ const userStore = useUserStore();
 
 userStore.fetchUsers();
 
+// const fetchUsers = async () => {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const users = await response.json();
+//     state.userList = users;
+// };
+
+
 </script>
 
 <template>
   <main>
     <h1>{{ title }}</h1>
+    <hr />
     <ul>
     
         <UserCard 

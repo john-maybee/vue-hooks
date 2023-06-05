@@ -9,6 +9,9 @@ console.log(route.params);
 <template>
   <main>
     <h1>{{ route.params.name }}</h1>
+    <p>Website: {{ route.params.website }}</p>
+    <p>Phone: {{ route.params.phone }}</p>
+    <p>Company: {{ route.params.company.name }}</p>
   </main>
 </template>
 
